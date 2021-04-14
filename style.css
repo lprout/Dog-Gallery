@@ -1,18 +1,57 @@
+* Paul Irish  Reset */
+
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+}
+
 body {
 	font-family: 'Kiwi Maru', 'serif', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 #logo {
-	width: 10%;
+	width: 15%;
 	transform:scaleX(-1);
 }
 
-.grid-container {
-	display: grid; 
-}
 
+.grid-container {
+
+}
 
 .footer-nav {
-	display: flex;
-	flex-direction: column;
+	display: grid;
+	grid-area: nav;
 }
+
+.icon-cred {
+	display: grid;
+	grid-area: cred;
+}
+
+.copyright {
+	display: grid;
+	grid-area: copyright;
+}
+
+
+
+footer {
+	display: grid; 
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-template-areas: 
+	"nav cred"
+	"nav copyright";
+
+}
+
+
+
