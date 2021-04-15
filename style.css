@@ -12,46 +12,128 @@ html {
 	padding: 0;
 }
 
+/* default styles for page */
+
 body {
 	font-family: 'Kiwi Maru', 'serif', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	font-size: 1.25m;
+	background-color: #dbefff;
+	color: #012952;
 }
 
+/* styling for page logo */
 #logo {
-	width: 15%;
+	width: 30%;
 	transform:scaleX(-1);
+	filter: opacity(80%);
+	filter: sepia(20%);
 }
 
 
-.grid-container {
+header {
+	display:flex;
+}
 
+.header-col1 {
+	display:flex;
+	flex-direction: column;
+	align-items:center;
+	justify-content: center;
+	width: 25%;
+}
+
+/* title of page & logo */
+.header-row1 {
+	display: flex;
+	align-items: center;
+}
+
+
+#banner {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 75%;
+	background-image: url('./images/meadow-banner.jpg');
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+#tagline {
+	display: flex;
+	text-shadow: 4px 4px 2px black;
+	font-size:2.5em;
+	color: #dbefff;
+}
+
+nav {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+.header-nav {
+	display: flex;
+	justify-content: space-around;
+	background-color: #0152a6;
+	box-shadow: 4px 4px 2px black;
+	filter:opacity(90%);
+}
+
+.header-nav .nav-link {
+	padding: 15px;
+	color: #dbefff;
+}
+
+.nav-link {
+	display: flex;
+	padding: 15px;
+	justify-content: space-between;
+
+}
+
+
+section {
+	margin: 25px;
+}
+
+a:link {
+	color:midnightblue;
+}
+
+a:hover {
+	color: rgb(255, 187, 0);
+}
+
+a:visited {
+	color: rgb(8, 6, 39);
+}
+
+section {
+	display: flex;
+	justify-content: center;
+
+}
+
+
+/* footer elements */
+
+footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 .footer-nav {
-	display: grid;
-	grid-area: nav;
+	padding: 2px;
+	margin: 5px;
 }
 
-.icon-cred {
-	display: grid;
-	grid-area: cred;
+.icon-cred, .copyright {
+	font-size: 1.1em;
+	padding: 2px;
+	margin:5px;
 }
-
-.copyright {
-	display: grid;
-	grid-area: copyright;
-}
-
-
-
-footer {
-	display: grid; 
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 1fr 1fr;
-	grid-template-areas: 
-	"nav cred"
-	"nav copyright";
-
-}
-
-
-

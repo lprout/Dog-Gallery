@@ -10,54 +10,95 @@
 		<title>Gallery of Good Dogs</title>
 	</head>
 
-	<body>
-		<div class="grid-container">
-		
+	<body>	
 			<header>
-				<h1 class="site-name" id="good-dog-gallery">Gallery of Good Dogs</h1>
+				<div class="header-col1">
+					<div class="header-row1">
+						<h1 class="site-name" id="good-dog-gallery">Gallery of Good Dogs</h1>
+						<img id="logo" alt="Website Logo of Dog" src="../../icons/sitting-dog.svg"/>
+					</div> <!--header row 1-->
 
-				<h3 class="description">An elegant online gallery of good dogs. View featured photos, full gallery, or or submit your own photos to be featured here. All good dogs welcome!</h3>
+					<div class="header-row2" >
+						<h3 class="description">An elegant online gallery of good dogs. View featured photos, full gallery, or or submit your own photos to be featured here. All good dogs welcome!</h3>
+					</div> <!--header row 2-->
 
-				<img id="logo" alt="Website Logo of Dog" src="../../icons/sitting-dog.svg"/>
+				</div> <!--header column 1-->
 
-				<h4><nav class="header-nav">
-					<a class="header-nav-link" href="#">Home</a>
-					<a class="header-nav-link" href="#featured">Featured</a>
-					<a class="header-nav-link" href="#most-popular">Most Popular</a>
-					<a class="footer-nav-link" href="#about">About Us</a>
-					<a class="header-nav-link" href="#submit">Submit Photo</a>
-					<a class="header-nav-link" href="contact.html">Contact Form</a>
-				</nav></h4>
+				<div class="header-col2" id="banner">
+					
+						<h4><nav class="header-nav">
+							<a class="nav-link" href="#">Home</a>
+							<a class="nav-link" href="#gallery.html">Full Gallery</a>
+							<a class="nav-link" href="#featured">Featured</a>
+							<a class="nav-link" href="#most-popular">Most Popular</a>
+							<a class="footer-nav-link" href="#about">About Us</a>
+							<a class="nav-link" href="#submit">Submit Photo</a>
+							<a class="nav-link" href="contact.html">Contact Form</a>
+						</nav></h4>
+					
+						<div class="tagline" id="tagline"><strong><em>All dogs are good dogs.</em></strong></div>
+					
+				</div> <!--header column2-->
 			</header>
 
 
 			<main>
+			
 
+			<section class="featured-section" id="featured">
+				<h4></h4>
+				<div class="photo-row">
+					<div class="photo-container">Ziggy</div>
+					<div class="photo-container">Lucky</div>
+					<div class="photo-container">Ruby</div>
+					<div class="photo-container">Jessie</div>
+					<div class="photo-container">
+						<img src="./images/luna-happy.jpg" alt="Luna sitting nicely outside" id="luna-happy"/>
+						<a href="#">Luna</a>
+						<button class="cart-button"><strong>Add Print to Cart</strong></button>
+					</div>				
+				</div>
+			</section>
 
+			<section class="most-popular-section" id="most-popular">
+				<h4></h4>
+				<div class="photo-row">
+					<div class="photo-container">Ziggy
+						<button class="cart-button">Add Print to Cart</button>
+					</div>
 
+					<div class="photo-container">Lucky</div>
+					<div class="photo-container">Ruby</div>
+					<div class="photo-container">Jessie</div>
+					<div class="photo-container">Luna</div>				
+				</div>
+			</section>
 
-
+			<section class="about-section" id="about">
+			<h4></h4>
+				<div class="about-image"></div>
+				<div class="about-text">
+					<h3>About Us</h3>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dolor morbi non arcu risus quis varius quam quisque id. Sapien et ligula ullamcorper malesuada proin. In fermentum posuere urna nec tincidunt praesent. Sed viverra ipsum nunc aliquet bibendum enim facilisis gravida. Id aliquet lectus proin nibh nisl condimentum. Tincidunt praesent semper feugiat nibh sed. Sit amet risus nullam eget felis eget nunc lobortis mattis. 
+					</p>
+				</div>
+			</section>
 			</main>
 
 			<footer>
 				<h4><nav class="footer-nav">
-					<a class="header-nav-link" href="#">Home</a>
-					<a class="header-nav-link" href="#featured">Featured</a>
-					<a class="header-nav-link" href="#most-popular">Most Popular</a>
+					<a class="nav-link" href="#">Home</a>
+					<a class="nav-link" href="#featured">Featured</a>
+					<a class="nav-link" href="#most-popular">Most Popular</a>
 					<a class="footer-nav-link" href="#about">About Us</a>
-					<a class="header-nav-link" href="#submit">Submit Photo</a>
-					<a class="header-nav-link" href="contact.html">Contact Form</a>
-				</nav>
-
-			
-				
-				</h4>
-			
-				<div class="copyright">Copyright&copy 2021 Laura Prout</div>
+					<a class="nav-link" href="#submit">Submit Photo</a>
+					<a class="nav-link" href="contact.html">Contact Form</a>
+				</nav></h4>
+					
 				<div class="icon-cred">Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
-
+				
+				<div class="copyright">Copyright&copy 2021 Laura Prout</div>
 			</footer>
-
-		</div> <!--grid-container-->
 	</body>
 </html>
