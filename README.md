@@ -1,35 +1,16 @@
-# Project1
+**# Project1**
 
-##Description:
+## Description:
 An online gallery for users to view and submit dog (or other pet) photos
 
-##Hosting Link: https://lprout.github.io/Project1/
+## Hosting Link: https://lprout.github.io/Project1/
 
-##: wireframes:
-###Documentation Requirements: 
+## wireframe paths: "./wireframes/wireframe-mobile.jpg", "./wireframes/wireframe-desktop.png"
 
-- Short project description 
-- Hosting link (!!!)
-- Link to wireframe images
-- User stories  
-- Credits if you took a significant chunk of code or structure from someone else
-
-###User story structure:
+## User story:
 
 ```
-**AS A** [*type of user*]  **(Who?)**
-**I WANT TO** access a list of bestsellers   **(What?)**
-**SO THAT** I can determine what I should read this month.  **(Why?)**
+**AS A** *dog lover*  **(Who?)**
+**I WANT TO** view pictures of dogs and submit photos of my dogs **(What?)**
+**SO THAT** I can learn how to photograph pets better.  **(Why?)**
 ```
-
-Syntax:
-
-# Heading 1
-
-## Heading 2
-
-### Heading 3
-
-**Bold text**.
-
-*Text in italic*.
