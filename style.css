@@ -272,6 +272,12 @@ section {
 }
 
 
+form {
+	display: flex;
+	justify-content: center;
+	margin: 25px;
+}
+
 /* ---------FOOTER------------------------------*/
 
 footer {

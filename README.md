@@ -1,4 +1,4 @@
-**# Project1**
+# Project 1
 
 ## Description:
 An online gallery for users to view and submit dog (or other pet) photos
