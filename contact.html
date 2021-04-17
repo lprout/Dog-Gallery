@@ -46,8 +46,42 @@
 
 
 		<main>
+			<h3><legend>Contact Us</legend></h3>
+			<form action= "#" method="post" id="contact">
+				<label for="userName">Full Name</label>
+				<input type="text" id="userName" name="userName"><br />
+				<label for="nickname">Nickname</label>
+				<input type="text" id="nickname" name="nickname"/><br />
+				<label for="email">Email</label>
+				<input type="email" id="email" name="email"/><br/>
+				<label for="phone">Telephone</label>
+				<input type="tel" id="phone" name="phone"/><br/>
+				<label for="age">Age</label>
+				<input type="number" id="age" name="age" min="0" max"150"/><br/>
+					
+				<label>Message topic: </label>
+				<select>
+					<radio value="Question"></option>
+					<radio value="Comment"></option>
+					<radio value="Issue with submission"></option>
+					<radio value="Other"></option>
+				</select>
 
-		
+				<input class="submit" type="submit" value="Send Message" />
+			</form>	
+
+			<legend>Sign Up for Emails</legend>
+			<form action= "#" method="post" id="sign-up">
+				<label>Email Address: </label>
+					<input type="email" required="required" /><br/>
+					<label>Delivery Frequency Preference: </label>
+				<select>
+					<option value="daily">Daily<option/>
+					<option value="weekly">Weekly<option/>
+					<option value="monthly">Monthly<option/>
+				</select>
+				<input class="submit" type="submit" value="Sign-Up" />
+			</form>
 
 		</main>
 
