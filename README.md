@@ -1,8 +1,11 @@
 # Project1
+
+##Description:
 An online gallery for users to view and submit dog (or other pet) photos
 
+##Hosting Link: https://lprout.github.io/Project1/
 
-
+##: wireframes:
 ###Documentation Requirements: 
 
 - Short project description 

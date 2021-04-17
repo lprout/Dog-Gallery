@@ -92,6 +92,11 @@ header {
 	padding: 30px 100px;
 }
 
+#paw {
+	width: 125px;
+	filter: opacity(75%);
+}
+
 nav {
 	display: flex;
 	flex-wrap: wrap;
