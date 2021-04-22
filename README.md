@@ -4,7 +4,7 @@
 An online gallery for users to view and submit dog (or other pet) photos
 
 ### Hosting Link: 
-`https://lprout.github.io/Dog-Gallery/`
+https://lprout.github.io/Dog-Gallery/
 
 ### Wireframes: 
 ```
@@ -13,9 +13,8 @@ An online gallery for users to view and submit dog (or other pet) photos
 ```
 
 ### Code for Image Modals modified from example at:
-`
 https://www.w3schools.com/howto/howto_css_modal_images.asp
-`
+
 
 ### User stories:
 ```
