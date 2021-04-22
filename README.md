@@ -4,7 +4,7 @@
 An online gallery for users to view and submit dog (or other pet) photos
 
 ### Hosting Link: 
-https://lprout.github.io/Dog-Gallery/
+`https://lprout.github.io/Dog-Gallery/`
 
 ### Wireframes: 
 ```
