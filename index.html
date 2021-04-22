@@ -7,6 +7,7 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Homemade+Apple&family=Kiwi+Maru:wght@500&display=swap" rel="stylesheet">
 		<link rel="icon" href="./images/pawprint.svg">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<title>Gallery of Good Dogs</title>
 	</head>
 
@@ -25,7 +26,6 @@
 
 			<div class="header-col2">
 				<nav class="header-nav">
-					<h3>
 					<a class="nav-link" href="index.html">Home</a>
 					<a class="nav-link" href="#gallery.html">Full Gallery</a>
 					<a class="nav-link" href="#featured">Featured</a>
@@ -33,7 +33,6 @@
 					<a class="nav-link" href="#about">About Us</a>
 					<a class="nav-link" href="submit.html">Submit Photo</a>
 					<a class="nav-link" href="contact.html">Contact Form</a>
-					</h3>
 				</nav>
 			
 				<div id="shopping-cart"><button class="cart-button">Add Prints to Cart</button><img id="cart" src="./images/shopping-cart.svg"  alt="image for shopping cart"></div>
@@ -44,27 +43,30 @@
 		</header>
 
 			<main>		
+				<!--Modal Set up for "pop-out" feature on images in gallery-->
+				<div id="myModal" class="modal">
+
+					<!-- The Close Button -->
+					<span class="close">&times;</span>
+
+					<!-- Modal Content (The Image) -->
+					<img class="modal-content" id="img01">
+
+					<!-- Modal Caption (Image Text) -->
+					<div id="caption"></div>
+
+				</div> <!--modal-->
 				<section class="featured-section" id="featured">
 					<div class="photo-row1"><h2>Featured</h2></div>
 					<div class="photo-row2">
 						<div class="photo-container" >
 						
-							<img class="gallery-photo" id="myImg"src="./images/ziggy2.jpg" alt="Ziggy with water balloon"/>
+							<img id="ziggy2" class="gallery-photo" src="./images/ziggy2.jpg" alt="Ziggy with water balloon"/>
 						
-							<div id="myModal" class="modal">
 
-								<!-- The Close Button -->
-								<span class="close">&times;</span>
-
-								<!-- Modal Content (The Image) -->
-								<img class="modal-content" id="img01">
-
-								<!-- Modal Caption (Image Text) -->
-  								<div id="caption"></div>
-
-							</div> <!--modal-->
 							
 						</div>
+							
 						<div class="photo-container"><img class="gallery-photo" src="./images/lucky1.jpg" alt="Lucky outside"/></div>
 						<div class="photo-container"><img class="gallery-photo" src="./images/ruby1.jpg" alt="Ruby portrait"/></div>
 						<div class="photo-container"><img class="gallery-photo" src="./images/jessie1.JPG" alt="Jessie at the beach"/></div>
@@ -130,14 +132,12 @@
 			</main>
 			<footer>
 				<nav class="footer-nav">
-					<h3>
-						<a class="nav-link" href="index.html">Home</a>
-						<a class="nav-link" href="#featured">Featured</a>
-						<a class="nav-link" href="#most-popular">Most Popular</a>
-						<a class="nav-link" href="#about">About Us</a>
-						<a class="nav-link" href="#submit">Submit Photo</a>
-						<a class="nav-link" href="contact.html">Contact Form</a>
-					</h3>
+					<a class="nav-link" href="index.html">Home</a>
+					<a class="nav-link" href="#featured">Featured</a>
+					<a class="nav-link" href="#most-popular">Most Popular</a>
+					<a class="nav-link" href="#about">About Us</a>
+					<a class="nav-link" href="#submit">Submit Photo</a>
+					<a class="nav-link" href="contact.html">Contact Form</a>
 				</nav>
 					
 				<div class="icon-cred">Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
@@ -146,27 +146,6 @@
 			</footer>
 
 	
-		<script>
-			// Get the modal
-			var modal = document.getElementById("myModal");
-
-			// Get the image and insert it inside the modal - use its "alt" text as a caption
-			var img = document.getElementById("myImg");
-			var modalImg = document.getElementById("img01");
-			var captionText = document.getElementById("caption");
-			img.onclick = function(){
-			modal.style.display = "block";
-			modalImg.src = this.src;
-			captionText.innerHTML = this.alt;
-			}
-
-			// Get the <span> element that closes the modal
-			var span = document.getElementsByClassName("close")[0];
-
-			// When the user clicks on <span> (x), close the modal
-			span.onclick = function() {
-			modal.style.display = "none";
-			}
-		</script>
+		<script src="script.js"></script>
 	</body>
 </html>
