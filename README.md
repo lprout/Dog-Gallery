@@ -12,7 +12,10 @@ https://lprout.github.io/Dog-Gallery/
 ./wireframes/wireframe-desktop.png
 ```
 
-### Code for Image Modals modified from example at: https://www.w3schools.com/howto/howto_css_modal_images.asp
+### Code for Image Modals modified from example at:
+`
+https://www.w3schools.com/howto/howto_css_modal_images.asp
+`
 
 ### User stories:
 ```
