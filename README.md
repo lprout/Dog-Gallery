@@ -1,16 +1,20 @@
 # Project 1: Dog Gallery
 
-## Description:
+### Description:
 An online gallery for users to view and submit dog (or other pet) photos
 
-## Hosting Link: https://lprout.github.io/Dog-Gallery/
+### Hosting Link: 
+https://lprout.github.io/Dog-Gallery/
 
-## wireframe paths: "./wireframes/wireframe-mobile.jpg", "./wireframes/wireframe-desktop.png"
+### Wireframes: 
+```
+./wireframes/wireframe-mobile.jpg
+./wireframes/wireframe-desktop.png
+```
 
-## Code for Image Modal used and modified from example at: https://www.w3schools.com/howto/howto_css_modal_images.asp
+### Code for Image Modals modified from example at: https://www.w3schools.com/howto/howto_css_modal_images.asp
 
-## User stories:
-
+### User stories:
 ```
 AS AN Administator I WANT TO monitor submissions and contact forms SO THAT I can continually update the website with new photos and make stylistic and functional changes based on user feedback. 
 
