@@ -7,6 +7,8 @@ An online gallery for users to view and submit dog (or other pet) photos
 
 ## wireframe paths: "./wireframes/wireframe-mobile.jpg", "./wireframes/wireframe-desktop.png"
 
+## Code for Image Modal used and modified from example at: https://www.w3schools.com/howto/howto_css_modal_images.asp
+
 ## User stories:
 
 ```

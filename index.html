@@ -47,13 +47,30 @@
 				<section class="featured-section" id="featured">
 					<div class="photo-row1"><h2>Featured</h2></div>
 					<div class="photo-row2">
-						<div class="photo-container"><img class="gallery-photo" src="./images/ziggy2.jpg" alt="Ziggy with water balloon"/></div>
+						<div class="photo-container" >
+						
+							<img class="gallery-photo" id="myImg"src="./images/ziggy2.jpg" alt="Ziggy with water balloon"/>
+						
+							<div id="myModal" class="modal">
+
+								<!-- The Close Button -->
+								<span class="close">&times;</span>
+
+								<!-- Modal Content (The Image) -->
+								<img class="modal-content" id="img01">
+
+								<!-- Modal Caption (Image Text) -->
+  								<div id="caption"></div>
+
+							</div> <!--modal-->
+							
+						</div>
 						<div class="photo-container"><img class="gallery-photo" src="./images/lucky1.jpg" alt="Lucky outside"/></div>
 						<div class="photo-container"><img class="gallery-photo" src="./images/ruby1.jpg" alt="Ruby portrait"/></div>
 						<div class="photo-container"><img class="gallery-photo" src="./images/jessie1.JPG" alt="Jessie at the beach"/></div>
 						<div class="photo-container"><img class="gallery-photo" src="./images/luna1.jpg" alt="Luna sitting giving paw"/></div>
 						<div class="photo-container"><img class="gallery-photo" src="./images/husky-pup.jpg" alt=" Grey and white husky puppy"/></div>
-						<div class="photo-container"><img class="gallery-photo" src="./images/yellow-lab2.jpg" alt="yellow lab puppy sitting"/></div>
+						<div class="photo-container"><img class="gallery-photo" src="./images/yellow-lab2.jpg" alt="Yellow lab puppy sitting"/></div>
 						<div class="photo-container"><img class="gallery-photo" src="./images/pool_pup.jpg" alt="Rottie puppy in the pool"/></div>
 						<div class="photo-container"><img class="gallery-photo" src="./images/happy-pit.jpg" alt="Happy black and white pit"/></div>
 						<div class="photo-container"><img class="gallery-photo" src="./images/terrier-pup.jpg" alt="Terrier puppy"/></div>
@@ -65,7 +82,11 @@
 				<section class="most-popular-section" id="most-popular">
 					<div class="photo-row1"><h2>Most Popular</h2></div>
 					<div class="photo-row1">
-						<div class="photo-container"><img class="gallery-photo" src="./images/ziggy2.jpg" alt="Ziggy with water balloon"/></div>
+						<div class="photo-container"><img class="gallery-photo" src="./images/ziggy2.jpg" alt="Ziggy with water balloon"/>
+						
+						
+						
+						</div>
 						<div class="photo-container"><img class="gallery-photo" src="./images/luna2.jpg" alt="Luna sitting in car"/></div>
 						<div class="photo-container"><img class="gallery-photo" src="./images/ruby3.jpg" alt="Ruby sitting"/></div>
 						<div class="photo-container"><img class="gallery-photo" src="./images/lucky2.jpg" alt="Lucky puppy"/></div>						
@@ -123,5 +144,29 @@
 				
 				<div class="copyright">Copyright &copy; 2021 Laura Prout</div>
 			</footer>
+
+	
+		<script>
+			// Get the modal
+			var modal = document.getElementById("myModal");
+
+			// Get the image and insert it inside the modal - use its "alt" text as a caption
+			var img = document.getElementById("myImg");
+			var modalImg = document.getElementById("img01");
+			var captionText = document.getElementById("caption");
+			img.onclick = function(){
+			modal.style.display = "block";
+			modalImg.src = this.src;
+			captionText.innerHTML = this.alt;
+			}
+
+			// Get the <span> element that closes the modal
+			var span = document.getElementsByClassName("close")[0];
+
+			// When the user clicks on <span> (x), close the modal
+			span.onclick = function() {
+			modal.style.display = "none";
+			}
+		</script>
 	</body>
 </html>
