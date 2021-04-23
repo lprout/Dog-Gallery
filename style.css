@@ -217,7 +217,7 @@ section h2 {
 	display: none; 
 	position: fixed; 
 	z-index: 1; /* Sit on top */
-	padding-top: 100px; /* Location of the box */
+	padding-top: 10px; /* Location of the box */
 	left: 0;
 	top: 0;
 	width: 100%; 
@@ -227,22 +227,23 @@ section h2 {
 	background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
   }
 
-/* Modal Content (Image) */
+/* -------Modal Image------------- */
 .modal-content {
 	margin: auto;
 	display: block;
 	width: 80%;
-	max-width: 700px;
+	max-width: 750px;
 	animation-name: zoom;
 	animation-duration: 0.5s;
   }  
 
+  /* Configure Simple Zoom Animation */
   @keyframes zoom {
 	from {transform:scale(0)}
 	to {transform:scale(1)}
   }
 
-/* The Close Button */
+/* Close Image Button */
 .close {
 	position: absolute;
 	top: 15px;
