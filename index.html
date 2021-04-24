@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 		<link rel="stylesheet" href="style.css"/>
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Homemade+Apple&family=Kiwi+Maru:wght@500&display=swap" rel="stylesheet">
@@ -10,47 +11,57 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<title>Gallery of Good Dogs</title>
 	</head>
-
 	<body>	
 		<header>
-			<div class="header-col1">
-				<div class="header-row1">
-					<h1 class="site-name" id="good-dog-gallery">Gallery of Good Dogs</h1>
+			<div class="header-row1">
+				<div class="header-col1">
+					<h1 class="site-name" id="title">Gallery of Good Dogs</h1>
 					<img id="logo" alt="Website Logo of Dog Sitting" src="./images/sitting-dog.svg"/>
-				</div> <!--header row 1-->
-
-				<div class="header-row2" >
-					<h3 class="description">An elegant online gallery of good dogs. View featured photos, full gallery, or or submit your own photos to be featured here. All good dogs welcome!</h3>
-				</div> <!--header row 2-->
-			</div> <!--header column 1-->
-
-			<div class="header-col2">
-				<nav class="header-nav">
-					<a class="nav-link" href="index.html">Home</a>
-					<a class="nav-link" href="#gallery.html">Full Gallery</a>
-					<a class="nav-link" href="#featured">Featured</a>
-					<a class="nav-link" href="#most-popular">Most Popular</a>
-					<a class="nav-link" href="#about">About Us</a>
-					<a class="nav-link" href="submit.html">Submit Photo</a>
-					<a class="nav-link" href="contact.html">Contact Form</a>
-				</nav>
+				</div>
+				
+				<div class="header-col2">
+					<!--nav bar-->
+					<nav id="ham-nav" class="header-nav">
+						<div id="nav-items">
+							<a class="nav-link" href="index.html">Home</a>
+							<a class="nav-link" href="gallery.html">Full Gallery</a>
+							<a class="nav-link" href="#featured">Featured</a>
+							<a class="nav-link" href="#most-popular">Most Popular</a>
+							<a class="nav-link" href="#about">About Us</a>
+							<a class="nav-link" href="contact.html">Contact Us</a>
+						</div>
+					</nav>
+					<h3 class="description">An elegant online gallery of good dogs. View featured photos, full gallery, or submit your own photos to be featured here. All good dogs welcome!</h3>		
+				</div>
+			</div> <!--header row 1-->
 			
-				<div id="shopping-cart"><button class="cart-button">Add Prints to Cart</button><img id="cart" src="./images/shopping-cart.svg"  alt="image for shopping cart"></div>
-		
-				<div id="tagline"><strong><em>All dogs are good dogs.<img id="paw" src="./images/pawprint.svg" alt="pawprint"/></em></strong></div>
-			
-			</div> <!--header column2-->
+			<div class="header-row2">
+				<div class="banner" id="banner">	
+					<div id="shopping-cart">
+						<button class="cart-button">Add Prints to Cart</button>
+						<img id="cart" src="./images/shopping-cart.svg"  alt="image for shopping cart">	
+					</div>
+					
+					<div class="tagline" id="tagline">
+					<img class="paw" id="paw1" src="./images/pawprint.svg" alt="pawprint"/>
+					<strong>All dogs are good dogs.</strong>
+					<img class="paw" id="paw2" src="./images/pawprint.svg" alt="pawprint"/>
+					</div>
+
+					
+				</div>
+			</div>
 		</header>
-
 			<main>		
-				<!--Modal Set up for "pop-out" feature on images in gallery-->
+			
+				<!--Modal Set up for "pop-out" feature for gallery images-->
 				<div id="myModal" class="modal">
 
 					<!-- The Close Button -->
 					<span class="close">&times;</span>
 
 					<!-- Modal Content (The Image) -->
-					<img class="modal-content" id="img01">
+					<img class="modal-content" id="img01" src="./images" alt="Modal content for a gallery photo">
 
 					<!-- Modal Caption (Image Text) -->
 					<div id="caption"></div>
@@ -58,15 +69,9 @@
 				</div> <!--modal-->
 				<section class="featured-section" id="featured">
 					<div class="photo-row1"><h2>Featured</h2></div>
+					
 					<div class="photo-row2">
-						<div class="photo-container" >
-						
-							<img id="ziggy2" class="gallery-photo" src="./images/ziggy2.jpg" alt="Ziggy with water balloon"/>
-						
-
-							
-						</div>
-							
+						<div class="photo-container" ><img id="ziggy2" class="gallery-photo" src="./images/ziggy2.jpg" alt="Ziggy with water balloon"/></div>
 						<div class="photo-container"><img class="gallery-photo" src="./images/lucky1.jpg" alt="Lucky outside"/></div>
 						<div class="photo-container"><img class="gallery-photo" src="./images/ruby1.jpg" alt="Ruby portrait"/></div>
 						<div class="photo-container"><img class="gallery-photo" src="./images/jessie1.JPG" alt="Jessie at the beach"/></div>
@@ -83,16 +88,11 @@
 
 				<section class="most-popular-section" id="most-popular">
 					<div class="photo-row1"><h2>Most Popular</h2></div>
-					<div class="photo-row1">
-						<div class="photo-container"><img class="gallery-photo" src="./images/ziggy2.jpg" alt="Ziggy with water balloon"/>
-						
-						
-						
-						</div>
+					<div class="photo-row2">
+						<div class="photo-container"><img class="gallery-photo" src="./images/ziggy2.jpg" alt="Ziggy with water balloon"/></div>
 						<div class="photo-container"><img class="gallery-photo" src="./images/luna2.jpg" alt="Luna sitting in car"/></div>
 						<div class="photo-container"><img class="gallery-photo" src="./images/ruby3.jpg" alt="Ruby sitting"/></div>
-						<div class="photo-container"><img class="gallery-photo" src="./images/lucky2.jpg" alt="Lucky puppy"/></div>						
-						<div class="photo-container"><img class="gallery-photo" src="./images/ruby2.jpg" alt="Ruby sitting outside"/></div>
+						<div class="photo-container"><img class="gallery-photo" src="./images/lucky2.jpg" alt="Lucky puppy"/></div>				<div class="photo-container"><img class="gallery-photo" src="./images/ruby2.jpg" alt="Ruby sitting outside"/></div>
 						<div class="photo-container"><img class="gallery-photo" src="./images/yellow-lab1.jpg" alt="yellow lab puppy sitting"/></div>
 						<div class="photo-container"><img class="gallery-photo" src="./images/golden-tulip.jpg" alt="golden holding tulip in mouth"/></div>
 						<div class="photo-container"><img class="gallery-photo" src="./images/swiss-shepherd.jpg" alt="Swiss shepherd in field"/></div>				
@@ -110,42 +110,41 @@
 
 				<section class="about-section" id="about">					
 					<h2>About Us</h2>
-						<div class="about-row">
-							<div class="about-image">
-								<a href="https://www.pexels.com/photo/crop-man-with-puppy-in-hands-5490235/">	
-									<img id="about-image" alt="Photo of man with puppy in hands" src ="./images/pexels-rachel-claire.jpg" />
-								</a>
-							</div>
-							
-							<!-- About Text -->
-							<div class="about-text">
-								<p>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Gravida arcu ac tortor dignissim convallis aenean. Elementum eu facilisis sed odio morbi. Scelerisque mauris pellentesque pulvinar pellentesque habitant morbi tristique senectus. Dui ut ornare lectus sit amet est placerat in egestas. Bibendum enim facilisis gravida neque convallis a. Feugiat pretium nibh ipsum consequat nisl vel. Quam adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus urna. Integer eget aliquet nibh praesent tristique magna sit amet. Rhoncus mattis rhoncus urna neque viverra.<br/>
-								</p>
-								<p>
-									Adipiscing vitae proin sagittis nisl. Amet nisl suscipit adipiscing bibendum est ultricies. Libero id faucibus nisl tincidunt eget nullam non. Massa vitae tortor condimentum lacinia quis vel. Sed viverra ipsum nunc aliquet bibendum enim facilisis gravida. Interdum velit euismod in pellentesque massa. In pellentesque massa placerat duis. Nam aliquam sem et tortor. Dis parturient montes nascetur ridiculus mus mauris vitae ultricies leo. Semper auctor neque vitae tempus quam pellentesque nec nam. Neque convallis a cras semper auctor neque. Id venenatis a condimentum vitae sapien pellentesque habitant. Rhoncus aenean vel elit scelerisque. Pretium quam vulputate dignissim suspendisse. Sit amet volutpat consequat mauris nunc congue nisi vitae suscipit. Nibh ipsum consequat nisl vel pretium lectus. Congue eu consequat ac felis donec et odio pellentesque. Suscipit adipiscing bibendum est ultricies integer quis auctor. Nibh sit amet commodo nulla facilisi nullam.<br/>
-								</p>
-						</div> 	<!-- About Text, closed -->
-					
+					<div id="about-row">
+						<div class="about-image">
+							<a href="https://www.pexels.com/photo/crop-man-with-puppy-in-hands-5490235/">	
+								<img id="about-image" alt="Photo of man with puppy in hands" src ="./images/pexels-rachel-claire.jpg" />
+							</a>
+						</div>
+						
+						<!-- About Text -->
+						<div class="about-text">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Gravida arcu ac tortor dignissim convallis aenean. Elementum eu facilisis sed odio morbi. Scelerisque mauris pellentesque pulvinar pellentesque habitant morbi tristique senectus. Dui ut ornare lectus sit amet est placerat in egestas. Bibendum enim facilisis gravida neque convallis a. Feugiat pretium nibh ipsum consequat nisl vel. Quam adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus urna. Integer eget aliquet nibh praesent tristique magna sit amet. Rhoncus mattis rhoncus urna neque viverra.<br/>
+							</p>
+							<p>
+								Adipiscing vitae proin sagittis nisl. Amet nisl suscipit adipiscing bibendum est ultricies. Libero id faucibus nisl tincidunt eget nullam non. Massa vitae tortor condimentum lacinia quis vel. Sed viverra ipsum nunc aliquet bibendum enim facilisis gravida. Interdum velit euismod in pellentesque massa. In pellentesque massa placerat duis. Nam aliquam sem et tortor. Dis parturient montes nascetur ridiculus mus mauris vitae ultricies leo. Semper auctor neque vitae tempus quam pellentesque nec nam. Neque convallis a cras semper auctor neque. Id venenatis a condimentum vitae sapien pellentesque habitant. Rhoncus aenean vel elit scelerisque. Pretium quam vulputate dignissim suspendisse. Sit amet volutpat consequat mauris nunc congue nisi vitae suscipit. Nibh ipsum consequat nisl vel pretium lectus. Congue eu consequat ac felis donec et odio pellentesque. Suscipit adipiscing bibendum est ultricies integer quis auctor. Nibh sit amet commodo nulla facilisi nullam.<br/>
+							</p>
+						</div>
 					</div>
 				</section>
 			</main>
 			<footer>
+
 				<nav class="footer-nav">
 					<a class="nav-link" href="index.html">Home</a>
+					<a class="nav-link" href="gallery.html">Full Gallery</a>
 					<a class="nav-link" href="#featured">Featured</a>
 					<a class="nav-link" href="#most-popular">Most Popular</a>
 					<a class="nav-link" href="#about">About Us</a>
-					<a class="nav-link" href="#submit">Submit Photo</a>
-					<a class="nav-link" href="contact.html">Contact Form</a>
+					<a class="nav-link" href="contact.html">Contact Us</a>
 				</nav>
 					
 				<div class="icon-cred">Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
 				
 				<div class="copyright">Copyright &copy; 2021 Laura Prout</div>
-			</footer>
 
-	
+			</footer>
 		<script src="script.js"></script>
 	</body>
 </html>

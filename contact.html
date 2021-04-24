@@ -11,89 +11,83 @@
 		<title>Gallery of Good Dogs</title>
 	</head>
 
-	<body>	
+	<body class="contact-body">	
 		<header>
-			<div class="header-col1">
-				<div class="header-row1">
-					<h1 class="site-name" id="good-dog-gallery">Gallery of Good Dogs</h1>
-					<img id="logo" alt="Website Logo of Dog" src="./images/sitting-dog.svg"/>
-				</div> <!--header row 1-->
-
-				<div class="header-row2" >
-					<h3 class="description">An elegant online gallery of good dogs. View featured photos, full gallery, or or submit your own photos to be featured here. All good dogs welcome!</h3>
-				</div> <!--header row 2-->
-
-			</div> <!--header column 1-->
-
-			<div class="header-col2">
+			<div class="header-row1">
+				<div class="header-col1">
+					<h1 class="site-name" id="title">Gallery of Good Dogs</h1>
+					<img id="logo" alt="Website Logo of Dog Sitting" src="./images/sitting-dog.svg"/>
+				</div>
 				
-				<h3><nav class="header-nav">
-					<a class="nav-link" href="#">Home</a>
-					<a class="nav-link" href="#gallery.html">Full Gallery</a>
-					<a class="nav-link" href="#featured">Featured</a>
-					<a class="nav-link" href="#most-popular">Most Popular</a>
-					<a class="nav-link" href="#about">About Us</a>
-					<a class="nav-link" href="submit.html">Submit Photo</a>
-					<a class="nav-link" href="contact.html">Contact Form</a>
-				</nav></h3>
-
-				<div id="shopping-cart"><button class="cart-button">Add Prints to Cart</button><img src="./images/shopping-cart.svg" id="cart" alt="image for shopping cart"></div>
-
-		
-				<div id="tagline" align="center"><strong><em>All dogs are good dogs.<img id="paw" src="./images/pawprint.svg" alt="pawprint"/></em>
-			</div> <!--header column2-->
+				<div class="header-col2">
+					<!--nav bar-->
+					<nav id="ham-nav" class="header-nav">
+						<div id="nav-items">
+							<a class="nav-link" href="index.html">Home</a>
+							<a class="nav-link" href="gallery.html">Full Gallery</a>
+							<a class="nav-link" href="#featured">Featured</a>
+							<a class="nav-link" href="#most-popular">Most Popular</a>
+							<a class="nav-link" href="#about">About Us</a>
+							<a class="nav-link" href="contact.html">Contact Us</a>
+						</div>
+					</nav>
+					<h3 class="description">An elegant online gallery of good dogs. View featured photos, full gallery, or submit your own photos to be featured here. All good dogs welcome!</h3>		
+				</div>
+			</div> <!--header row 1-->
+			
+			<div class="header-row2">
+				<div class="banner" id="banner">	
+					<div id="shopping-cart">
+						<button class="cart-button">Add Prints to Cart</button>
+						<img id="cart" src="./images/shopping-cart.svg"  alt="image for shopping cart">	
+					</div>
+					<div class="tagline" id="tagline">
+						<img class="paw" id="paw1" src="./images/pawprint.svg" alt="pawprint"/>
+						<strong>All dogs are good dogs.</strong>
+						<img class="paw" id="paw2" src="./images/pawprint.svg" alt="pawprint"/>
+					</div>
+				</div>
+			</div>
 		</header>
-
-
-		<main>
-			<h3><legend>Contact Us</legend></h3>
-			<form action= "#" method="post" id="contact">
-				<label for="userName">Full Name</label>
-				<input type="text" id="userName" name="userName"><br />
-				<label for="nickname">Nickname</label>
-				<input type="text" id="nickname" name="nickname"/><br />
-				<label for="email">Email</label>
-				<input type="email" id="email" name="email"/><br/>
-				<label for="phone">Telephone</label>
-				<input type="tel" id="phone" name="phone"/><br/>
-				<label for="age">Age</label>
-				<input type="number" id="age" name="age" min="0" max"150"/><br/>
-					
-				<label>Message topic: </label>
-				<select>
-					<option value="Question"></option>
-					<option value="Comment"></option>
-					<option value="Issue with submission"></option>
-					<option value="Other"></option>
-				</select>
-
-				<input class="submit" type="submit" value="Send Message" />
-			</form>	
-
-			<legend>Sign Up for Emails</legend>
-			<form action= "#" method="post" id="sign-up">
-				<label>Email Address: </label>
-					<input type="email" required="required" /><br/>
-					<label>Delivery Frequency Preference: </label>
-				<select>
-					<option value="daily">Daily<option/>
-					<option value="weekly">Weekly<option/>
-					<option value="monthly">Monthly<option/>
-				</select>
-				<input class="submit" type="submit" value="Sign-Up" />
-			</form>
-
+		<main class="contact-main-area">
+			<!--Contact Form-->
+			<div class="form-container">
+				<form action= "https://formspree.io/f/meqvowry" method="POST" class="contact-form">
+					<h2>Contact Us:</h2>
+					<label for="userName">
+						Name: <input type="text" id="userName" name="userName" required>
+					</label>
+					<label for="email">
+						Email Address: <input type="email" id="email" name="email" required/>
+					</label>
+					<label>Message Topic: 
+					<select>
+						<option value="Question">Question</option>
+						<option value="Comment">Comment</option>
+						<option value="Issue with submission">Issue</option>
+						<option value="Other">Other</option>
+					</select>
+					</label>
+					<label>
+						Message: </br>
+						<textarea name="message" rows="10" required></textarea>
+					</label>
+					<div class="form-button">
+						<button type="submit" class="action-button">SEND MESSAGE</button>
+					</div>
+				</form>	
+			</div>
 		</main>
 
 		<footer>
-			<h3><nav class="footer-nav">
-				<a class="nav-link" href="#">Home</a>
-				<a class="nav-link" href="#featured">Featured</a>
-				<a class="nav-link" href="#most-popular">Most Popular</a>
-				<a class="footer-nav-link" href="#about">About Us</a>
-				<a class="nav-link" href="#submit">Submit Photo</a>
-				<a class="nav-link" href="contact.html">Contact Form</a>
-			</nav></h3>
+			<nav class="footer-nav">
+					<a class="nav-link" href="index.html">Home</a>
+					<a class="nav-link" href="gallery.html">Full Gallery</a>
+					<a class="nav-link" href="#featured">Featured</a>
+					<a class="nav-link" href="#most-popular">Most Popular</a>
+					<a class="nav-link" href="#about">About Us</a>
+					<a class="nav-link" href="contact.html">Contact Us</a>
+			</nav>
 				
 			<div class="icon-cred">Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
 			

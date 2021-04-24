@@ -6,46 +6,67 @@
 		<link rel="stylesheet" href="style.css"/>
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Homemade+Apple&family=Kiwi+Maru:wght@500&display=swap" rel="stylesheet">
-		<link rel="icon" href="./images/pawprint.svg">
-		
-		<title>Gallery of Good Dogs</title>
+		<link rel="icon" href="./images/photo.svg">
+		<title>Full Gallery</title>
 	</head>
 
 	<body>	
 		<header>
-			<div class="header-col1">
 				<div class="header-row1">
-					<h1 class="site-name" id="good-dog-gallery">Gallery of Good Dogs</h1>
-					<img id="logo" alt="Website Logo of Dog" src="./images/sitting-dog.svg"/>
-				</div> <!--header row 1-->
-
-				<div class="header-row2" >
-					<h3 class="description">An elegant online gallery of good dogs. View featured photos, full gallery, or or submit your own photos to be featured here. All good dogs welcome!</h3>
-				</div> <!--header row 2-->
-
-			</div> <!--header column 1-->
-
-			<div class="header-col2">
+				<div class="header-col1">
+					<h1 class="site-name" id="title">Gallery of Good Dogs</h1>
+					<img id="logo" alt="Website Logo of Dog Sitting" src="./images/sitting-dog.svg"/>
+				</div>
 				
-				<h3><nav class="header-nav">
-					<a class="nav-link" href="#">Home</a>
-					<a class="nav-link" href="#gallery.html">Full Gallery</a>
-					<a class="nav-link" href="#featured">Featured</a>
-					<a class="nav-link" href="#most-popular">Most Popular</a>
-					<a class="nav-link" href="#about">About Us</a>
-					<a class="nav-link" href="submit.html">Submit Photo</a>
-					<a class="nav-link" href="contact.html">Contact Form</a>
-				</nav></h3>
+				<div class="header-col2">
+					<!--nav bar-->
+					<nav id="ham-nav" class="header-nav">
+						<div id="nav-items">
+							<a class="nav-link" href="index.html">Home</a>
+							<a class="nav-link" href="gallery.html">Full Gallery</a>
+							<a class="nav-link" href="#featured">Featured</a>
+							<a class="nav-link" href="#most-popular">Most Popular</a>
+							<a class="nav-link" href="#about">About Us</a>
+							<a class="nav-link" href="contact.html">Contact Us</a>
+						</div>
+					</nav>
+					<h3 class="description">An elegant online gallery of good dogs. View featured photos, full gallery, or submit your own photos to be featured here. All good dogs welcome!</h3>		
+				</div>
+			</div> <!--header row 1-->
+			
+			<div class="header-row2">
+				<div class="banner" id="banner">	
+					<div id="shopping-cart">
+						<button class="cart-button">Add Prints to Cart</button>
+						<img id="cart" src="./images/shopping-cart.svg"  alt="image for shopping cart">	
+					</div>
+					
+					<div class="tagline" id="tagline">
+					<img class="paw" id="paw1" src="./images/pawprint.svg" alt="pawprint"/>
+					<strong>All dogs are good dogs.</strong>
+					<img class="paw" id="paw2" src="./images/pawprint.svg" alt="pawprint"/>
+					</div>
 
-				<div id="shopping-cart"><button class="cart-button">Add Prints to Cart</button><img src="./images/shopping-cart.svg" id="cart" alt="image for shopping cart"></div>
-
-		
-				<div id="tagline" align="center"><strong><em>All dogs are good dogs.<img id="paw" src="./images/pawprint.svg" alt="pawprint"/></em>
-			</div> <!--header column2-->
+					
+				</div>
+			</div>
 		</header>
 
-
 		<main>
+			<!--Modal Set up for "pop-out" feature for gallery images-->
+			<div id="myModal" class="modal">
+
+				<!-- The Close Button -->
+				<span class="close">&times;</span>
+
+				<!-- Modal Content (The Image) -->
+				<img class="modal-content" id="img01" src="./images" alt="Modal content for a gallery photo">
+
+				<!-- Modal Caption (Image Text) -->
+				<div id="caption"></div>
+
+			</div> <!--modal-->
+
 			<section class="full-gallery"><h2>Full Gallery</h2></div>
 			<div class="photo-row1">
 				<div class="photo-container"><img src="./images/ziggy2.jpg" alt="Ziggy with water balloon"/></div>
@@ -82,14 +103,14 @@
 		</main>
 
 		<footer>
-			<h3><nav class="footer-nav">
-				<a class="nav-link" href="#">Home</a>
+			<nav class="footer-nav">
+				<a class="nav-link" href="index.html">Home</a>
+				<a class="nav-link" href="gallery.html">Full Gallery</a>
 				<a class="nav-link" href="#featured">Featured</a>
 				<a class="nav-link" href="#most-popular">Most Popular</a>
-				<a class="footer-nav-link" href="#about">About Us</a>
-				<a class="nav-link" href="#submit">Submit Photo</a>
-				<a class="nav-link" href="contact.html">Contact Form</a>
-			</nav></h3>
+				<a class="nav-link" href="#about">About Us</a>
+				<a class="nav-link" href="contact.html">Contact Us</a>		
+			</nav>
 				
 			<div class="icon-cred">Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
 			
