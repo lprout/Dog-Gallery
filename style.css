@@ -16,11 +16,9 @@ html {
 
 body {
 	font-family: 'Kiwi Maru', 'serif', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-	background-color: #e0fbfc;
-	color: rgb(24, 24, 43);
+	background-color: white;
+	color: black;
 }
-
-
 
 
 /* --------------HEADER-------------------------------------------- */
@@ -34,9 +32,9 @@ header {
 	flex-direction: column;
 	justify-content: center;
 	align-items: space-between;
-	background-color: #ee6c4d;
+	background-image: url(./images/meadow.jpg);
 	color: #e0fbfc;
-	border-bottom: 45px solid #3d5a80;
+	border-bottom: 45px solid #4f729b;
 	text-shadow: 1px 1px 2px black;
 }
 
@@ -44,63 +42,43 @@ header {
 .header-col1 {
 	display:flex;
 	align-items: center;
-	justify-content: space-evenly;
-	text-shadow: 3px 3px 10px black;
-	width: 30%;
-	margin-left: 25px;
-}
-
-.header-col2 {
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	align-items: space-evenly;
-	padding: 15px 25px;
-	width: 70%;
-}
-
-.col2-row {
-	display:flex;
 	justify-content: center;
-	align-items: center;
-	margin: 0px 15px;
+	flex-wrap: wrap;
+	text-shadow: 3px 3px 10px black;
+	margin: 10px 0 10px 0;
+}
+
+.header-nav {
+	margin-bottom: 25px;
 }
 
 .description {
 	text-align: left;
-	padding: 25px 50px 0px 50px;
+	padding: 25px 60px 0px 60px;
 }
 
 /* header row1: title of page, logo, and nav bar */
 
 .header-row1 {
 	display: flex;
+	flex-direction: column;
 	justify-content: space-between;
-	background-color: #293241;
+	background-color: #004864;
 	box-shadow: 3px 3px 10px black;	
 	margin:10px;
 }
 #logo {
-	width: 50%;
+	width: 150px; 
 	transform:scaleX(-1); 
 	filter:opacity(.60);
 	filter:invert(1);
-	padding: 10px 0px;
+	padding: 25px;
 }
 
 #title {
-	padding-right: 15px;
-	margin-left: 15px; 
-	width: 50%;
+	margin: 0 20px 0 20px; 
 }
-/* header row2: */
-
-.header-row2 {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin-top: 10px;
-}
+/* -- Banner -------- */
 
 .banner {
 	display: flex;
@@ -111,16 +89,18 @@ header {
 }
 
 .tagline {
+	display: flex;
+	justify-content: space-evenly;
 	font-family: 'Homemade Apple';
-	text-shadow: 2px 2px 8px black;
-	font-size: 350%;
-	color: #e0fbfc;
+	text-shadow: 3px 3px 5px black;
+	font-size: 3em;
+	color: white;
+	padding: 15px 40px;
+	text-align: center;
 }
 
 .paw {
-	width: 50px;
-	filter:invert(1);
-	margin: 0px 50px;
+	display: none;
 }
 
 nav {
@@ -128,93 +108,8 @@ nav {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	flex-wrap: wrap;
 }
 
-/* Desktop/larger Screens*/
-#ham-nav {
-	width: 100%; 
-}
-
-/* Horizontal Menu Items */
-
-#nav-items { display: flex; }
-#nav-items a {
-	display:flex;
-	justify-content: flex-end;
-	padding-right: 5px;
-	text-align: center;
-}
-
-/* Media Queries for Smaller Screens */
-@media screen and (max-width: 1000px) {
-	.ham-nav {
-		display: flex;
-		justify-content: center;
-		width: auto;
-	}
-	.header-row1 {
-		display: flex;
-		flex-direction: column;
-		flex-wrap: wrap;
-	}
-	#about-row {
-		margin: 15px;
-	}	
-
-	
-
-	.header-col2 {
-
-		display:flex;
-		flex-direction: row;
-		justify-content: center;
-		align-items: center;
-		margin: 30px;
-		padding: 0px;
-	}
-
-	#nav-items {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items:flex-start;
-	}
-
-	.header-col1 {
-		font-size: 1.2em;
-		width: 100%;
-		margin: 30px;
-	}
-
-	#logo {
-		margin:20px 25px 0px 5px;
-		width:25%;
-	}
-
-	section {
-		padding: 5px;
-		margin-bottom: 25px;
-	}
-}
-
-
-@media screen and (max-width: 768px) {
-	.header-row1 {
-		display: flex;
-		flex-direction: column;
-		flex-wrap: wrap;
-	}
-
-	.header-col1 {
-		width: 100%
-	}
-	
-	#logo {
-		width: 30%;
-	}
-
-  }
 
 .header-nav .nav-link {
 	color: rgb(216, 216, 216);
@@ -241,8 +136,9 @@ section {
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
-	margin: 30px;
-	border:  10px solid #3d5a80;
+	margin: 15px;	
+	padding-bottom: 15px;
+	border:  5px solid #468faf;
 	background-color: #98c1d9;
 	box-shadow: 3px 3px 10px black;
 }
@@ -297,18 +193,17 @@ section h2 {
 .photo-container {
 	display: flex;
 	flex-direction: column;
-	width: 250px;
+	width: 100%;
+	margin: 0 10px 0 10px;
 	justify-content: space-evenly;
-	align-items: space-evenly;
-	margin: 10px 10px 0px 0px;
 }
 
 .gallery-photo {
 	width: 100%;
-	min-width: 150px;
+	min-width: 100px;
 	box-shadow: 3px 3px 20px black;
-	margin: 10px;
-	transition: 0.5s;
+	margin-top: 25px;
+	transition: 0.4s;
 }
 
 .gallery-photo:hover {
@@ -501,11 +396,14 @@ footer {
 }
 
 .footer-nav {
-	padding: 1px 5px;;
+
+	text-align: center;
+	padding: 1px 5px;
 	margin: 5px;
 }
 
 .icon-cred, .copyright {
+	text-align: center;
 	font-size: 1.1em;
 	padding: 2px;
 	margin:5px;
@@ -513,3 +411,70 @@ footer {
 
 
 
+/* ----- Media Query for Mobile Screens ------------------- */
+@media screen and (min-width: 320px) {
+	section {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		margin: 30px;
+		padding-bottom: 25px;
+		border: 10px solid #468faf;
+	}
+	
+	.photo-container {
+		width: 250px;
+	}
+
+  }
+
+
+/* ------- Media Query for Tablet-size Screens ------------*/  
+@media screen and (min-width: 768px) {
+	.header-row1 {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		background-color: #004864;
+		box-shadow: 3px 3px 10px black;	
+		margin:10px;
+	}
+
+	.header-col1 {
+		display: flex;
+		align-items: center;
+		flex-wrap: nowrap;
+		width: 30%;
+		text-shadow: 3px 3px 10px black;
+		margin: 10px 0 10px 20px;
+	}
+
+	#nav-items {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-end;
+	}
+
+	#logo {
+		width: 50%;
+	}
+
+	.paw {
+		display: inline;
+		width: 60px;
+		filter:invert(1);
+		margin: 0px 50px;
+	}
+
+  }
+
+
+
+
+
+
+/* ------- Media Query for Desktop Screens --------*/
+@media screen and (min-width: 1200px) {
+
+
+}
