@@ -1,4 +1,4 @@
-# Project 1: Dog Gallery
+# Dog Gallery
 
 ### Description:
 An online gallery for users to view and submit dog (or other pet) photos
